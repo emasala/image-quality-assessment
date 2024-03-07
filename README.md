@@ -4,6 +4,24 @@
 [![Docs](https://img.shields.io/badge/docs-online-brightgreen)](https://idealo.github.io/image-quality-assessment/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://github.com/idealo/image-quality-assessment/blob/master/LICENSE)
 
+### Note
+
+This code has been modified to support directories containing **any image format** (not just JPEG), any extension/format is supported. Also, the code automatically ignores non-image files present in the directory passed as parameter. If you like/use this specific variant of the code, you are *kindly requested to cite* our research work in the field:
+
+``` bibtex
+@article{tiotsop2022mimicking,
+  title={Mimicking individual media quality perception with neural network based artificial observers},
+  author={Tiotsop, Lohic Fotio and Mizdos, Tomas and Barkowsky, Marcus and Pocta, Peter and Servetti, Antonio and Masala, Enrico},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  volume={18},
+  number={1},
+  pages={1--25},
+  year={2022},
+ 
+```
+
+### Original instructions
+
 This repository provides an implementation of an aesthetic and technical image quality model based on Google's research paper ["NIMA: Neural Image Assessment"](https://arxiv.org/pdf/1709.05424.pdf). You can find a quick introduction on their [Research Blog](https://research.googleblog.com/2017/12/introducing-nima-neural-image-assessment.html).
 
 NIMA consists of two models that aim to predict the aesthetic and technical quality of images, respectively. The models are trained via transfer learning, where ImageNet pre-trained CNNs are used and fine-tuned for the classification task.
